@@ -1,0 +1,260 @@
+$ruler: 16px;
+$color-red: #AE1100;
+$color-bg: #EBECF0;
+$color-shadow: #BABECC;
+$color-white: #FFF;
+
+
+body, html {
+  background-color:$color-bg;
+  
+}
+body{
+  overflow-x: hidden;
+}
+
+body, p, input, select, textarea, button {
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: -0.2px;
+    font-size: $ruler;
+}
+
+div, p {
+  color: $color-shadow;
+  text-shadow: 1px 1px 1px $color-white;
+}
+
+.cont{
+  display: flex;
+    width: 50%;
+    margin: auto;
+    background-color: #ffffff;
+    position: relative;
+    top: 118px;
+    z-index: 1;
+    box-shadow: 0 0 2em black;
+form {
+  padding: $ruler;
+  width: $ruler*20;
+  margin: 0 auto;
+}
+}
+
+
+.segment {
+  padding: $ruler*2 0;
+  text-align: center;
+}
+
+button, input {
+  border: 0;
+  outline: 0;
+  font-size: $ruler;
+  border-radius: $ruler*20;
+  padding: $ruler;
+  background-color:$color-bg;
+  text-shadow: 1px 1px 0 $color-white;
+
+}
+  #mail-zone{
+    height: 33px;
+    position: relative;
+    left: 6%;
+    top: 7px;
+  }
+  #password-zone{
+    height: 33px;
+    position: relative;
+    left: 6%;
+    top: 7px;
+  }
+
+#alert{
+      height: 206px;
+      width: 52%;
+      border-radius: 26px;
+      position: absolute;
+      background: red;
+      top: -416px;
+      z-index: 2;
+      p {
+        color: #0c1533;
+        text-shadow: 1px 1px 1px #FFF;
+        font-size: 66px;
+        position: relative;
+        top: -69px;
+        left: 41%;
+    }
+      h1{
+        text-align: center;
+        font-size: 25px;
+        position: relative;
+        top: -136px;
+        color: #0c1533;
+        text-shadow: 1px 1px 1px #FFF;
+      }
+      
+      #btn1 {
+        position: relative;
+        top: -139px;
+        left: 40%;
+        height: 32px;
+        left: 42%;
+        width: 16.5%;
+        background-color: white;
+        p{
+          font-size: 19px;
+          font-family: serif;
+          position: relative;
+          top: 6px;
+          left: 14px;
+          cursor: pointer;
+        }
+      }
+      
+      
+}
+#alert1{
+  height: 206px;
+  width: 52%;
+  border-radius: 26px;
+  position: absolute;
+  background: #109014;
+  top: -416px;
+  z-index: 2;
+  p {
+    color: #0c1533;
+    text-shadow: 1px 1px 1px #FFF;
+    font-size: 66px;
+    position: relative;
+    top: -69px;
+    left: 41%;
+}
+  h1{
+    text-align: center;
+    font-size: 25px;
+    position: relative;
+    top: -137px;
+    color: #0c1533;
+    text-shadow: 1px 1px 1px #FFF;
+  }
+  #btn2{
+    position: relative;
+    top: -138px;
+    left: 40%;
+    height: 32px;
+    left: 42%;
+    width: 16.5%;
+    background-color: white;
+    p{
+      font-size: 19px;
+      font-family: serif;
+      position: relative;
+      top: 6px;
+      left: 14px;
+      cursor: pointer;
+    }
+  }
+  
+}
+
+
+input {
+  margin-right: $ruler/2;
+  box-shadow:  inset 2px 2px 5px $color-shadow, inset -5px -5px 10px $color-white;
+  width: 100%;
+  box-sizing: border-box;
+  transition: all 0.2s ease-in-out;
+  appearance: none;
+  -webkit-appearance: none;
+
+  &:focus {
+    box-shadow:  inset 1px 1px 2px $color-shadow, inset -1px -1px 2px $color-white;
+  }
+}
+
+button {
+  color:#61677C;
+  font-weight: bold;
+  box-shadow: -5px -5px 20px $color-white,  5px 5px 20px $color-shadow;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  font-weight: 600;
+  
+  &:hover {
+    box-shadow: -2px -2px 5px $color-white, 2px 2px 5px $color-shadow;
+  }
+  
+  &:active {
+    box-shadow: inset 1px 1px 2px $color-shadow, inset -1px -1px 2px $color-white;
+  }
+  
+  .icon {
+    margin-right: $ruler/2;
+  }
+  
+  &.unit {
+    border-radius: $ruler/2;
+    line-height: 0;
+    width: $ruler*3;
+    height: $ruler*3;
+    display:inline-flex;
+    justify-content: center;
+    align-items:center;
+    margin: 0 $ruler/2;
+    font-size: $ruler*1.2;
+    
+    .icon {
+      margin-right: 0; 
+    }
+  }
+  
+  &.red {
+    display: block;
+    width: 100%;
+    color:$color-red;
+  }
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  
+}
+
+
+/****************************** media part ************************************/
+
+
+@media only screen and (max-width: 500px){
+  #alert {
+    width: 87%;
+     h1 {
+      font-size: 20px;
+  }
+  #btn1 {
+    width: 23.5%;
+    left: 38%;
+    p{
+      font-size: 16px;
+    }
+  }
+ 
+}
+
+#alert1 {
+  width: 87%;
+   h1 {
+    font-size: 20px;
+}
+#btn2 {
+  width: 23.5%;
+  left: 38%;
+  p{
+    font-size: 16px;
+  }
+}
+
+}
+}

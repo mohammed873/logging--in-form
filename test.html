@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="tst.scss">
+    <link rel="stylesheet" href="tst.css">
+    <script src="test.js"></script>
+</head>
+<body>
+ <div class="cont">
+     <form>
+        <div class="segment">
+          <h1>Sign up</h1>
+        </div>
+          <input  id="mail" type="text" placeholder="Email Address" onkeyup ="validmail()">
+          <div id="mail-zone"></div>
+          <input type="password" placeholder="Password" id="password" onkeyup=" validpassword()">
+          <div id="password-zone"></div>
+        <button class="red" type="button"  onclick="validation()"><i class="icon ion-md-lock"></i> Log in</button>  
+        <div id="alert">
+          <div><p>✘</p></div>
+          <h1>Please Check Your Information!</h1>
+          <div id="btn1" onclick=" alert1()">
+            <p>OK</p>
+          </div>
+        </div> 
+        <div id="alert1">
+          <div><p>✔</p></div>
+          <h1>You Have logged in Successfuly</h1>
+          <div id="btn2" onclick=" alert2()">
+            <p>OK</p>
+          </div>
+        </div>           
+    </form>  
+</div>
+</body>
+</html>
